@@ -66,7 +66,7 @@ export default function Home() {
             />
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Most charities can't accept $1 monthly donations due to processing fees. 
+            Most charities can&apos;t accept $1 monthly donations due to processing fees. 
             We bundle your small monthly contributions into meaningful donations that actually reach the causes you care about.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
