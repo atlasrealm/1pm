@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import AnimatedText from '@/components/AnimatedText'
 
 export default function Home() {
@@ -18,9 +19,9 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-6">
               <a href="#how-it-works" className="text-gray-600 hover:text-blue-600 transition-colors">How It Works</a>
               <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+              <Link href="/donate" className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                 Get Started
-              </button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -39,9 +40,9 @@ export default function Home() {
             <div className="flex flex-col space-y-3 pt-4">
               <a href="#how-it-works" className="text-gray-600 hover:text-blue-600 transition-colors py-2">How It Works</a>
               <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors py-2">About</a>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors w-fit">
+              <Link href="/donate" className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors w-fit">
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -70,9 +71,9 @@ export default function Home() {
             We bundle your small monthly contributions into meaningful donations that actually reach the causes you care about.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            <Link href="/donate" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
               Start Donating
-            </button>
+            </Link>
             <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
               Learn More
             </button>
@@ -178,9 +179,9 @@ export default function Home() {
           <p className="text-blue-100 mb-8 text-lg">
             Join thousands of people turning small monthly contributions into real impact.
           </p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+          <Link href="/donate" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
             Get Started Today
-          </button>
+          </Link>
         </div>
       </div>
 
