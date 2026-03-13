@@ -35,8 +35,7 @@ const PLANS: Record<Plan, PlanDetails> = {
     toCharity: 2.70,
     feePercent: 10,
     interval: '/3 months',
-    highlight: true,
-    badge: 'Recommended',
+    highlight: false,
   },
   yearly: {
     label: 'Yearly',
@@ -51,7 +50,7 @@ const PLANS: Record<Plan, PlanDetails> = {
 }
 
 export default function DonatePage() {
-  const [selected, setSelected] = useState<Plan>('quarterly')
+  const [selected, setSelected] = useState<Plan>('monthly')
   const [loading, setLoading] = useState(false)
 
   const plan = PLANS[selected]

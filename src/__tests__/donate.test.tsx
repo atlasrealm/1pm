@@ -9,11 +9,9 @@ describe('Donate page', () => {
     expect(screen.getByText('Yearly')).toBeInTheDocument()
   })
 
-  it('pre-selects quarterly as recommended', () => {
+  it('does not show a recommended badge on quarterly', () => {
     render(<DonatePage />)
-    expect(screen.getByText('Recommended')).toBeInTheDocument()
-    // Default checkout button should show quarterly price
-    expect(screen.getByText('Donate €3 /3 months')).toBeInTheDocument()
+    expect(screen.queryByText('Recommended')).not.toBeInTheDocument()
   })
 
   it('updates fee display when selecting monthly', () => {

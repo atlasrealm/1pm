@@ -52,9 +52,9 @@ export default function Home() {
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto text-center bg-white rounded-xl p-8">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Donate just $1 per month and help{' '}
-            <AnimatedText 
+          <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            Donate just &euro;1 per month and help{' '}
+            <AnimatedText
               phrases={[
                 'save lives',
                 'fight hunger',
@@ -67,22 +67,21 @@ export default function Home() {
             />
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Most charities can&apos;t accept $1 monthly donations due to processing fees. 
-            We bundle your small monthly contributions into meaningful donations that actually reach the causes you care about.
+            We combine thousands of &euro;1 donations into meaningful contributions that charities can actually put to work.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/donate" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            <Link href="/donate" className="glow-btn bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
               Start Donating
             </Link>
-            <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+            <a href="#how-it-works" className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
               Learn More
-            </button>
+            </a>
           </div>
         </div>
       </div>
 
       {/* How It Works Section */}
-      <div className="bg-white py-16">
+      <div id="how-it-works" className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
@@ -95,16 +94,16 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Choose Your Causes</h3>
                 <p className="text-gray-600">
-                  Select the charities and causes you want to support with your monthly $1 donations.
+                  Pick the charities you want to support with your &euro;1 monthly donation.
                 </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-blue-600">2</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">We Bundle & Save</h3>
+                <h3 className="text-xl font-semibold mb-2">We Bundle Together</h3>
                 <p className="text-gray-600">
-                  Your monthly contributions are collected and bundled together to eliminate processing fees.
+                  Your &euro;1 joins thousands of others, so charities receive one meaningful donation instead of tiny individual ones.
                 </p>
               </div>
               <div className="text-center">
@@ -113,7 +112,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Maximum Impact</h3>
                 <p className="text-gray-600">
-                  100% of your donations reach your chosen charities as meaningful, fee-free contributions.
+                  We don&apos;t take a cut. Only the payment provider&apos;s fee is deducted &mdash; none of it goes to us.
                 </p>
               </div>
             </div>
@@ -126,41 +125,41 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-              The $1 Donation Problem
+              &euro;1/Month Goes Further Than You Think
             </h2>
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-red-600">Without 1PM</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-red-600">Donating alone</h3>
                   <div className="space-y-3">
                     <div className="flex items-center">
-                      <span className="text-red-500 mr-2">✗</span>
-                      <span>$1 donation → $0.30 processing fee → $0.70 to charity</span>
+                      <span className="text-red-500 mr-2">&#10005;</span>
+                      <span>A single &euro;1 donation is too small for most charities to process</span>
                     </div>
                     <div className="flex items-center">
-                      <span className="text-red-500 mr-2">✗</span>
-                      <span>Most charities reject small donations</span>
+                      <span className="text-red-500 mr-2">&#10005;</span>
+                      <span>You want to help, but can&apos;t afford to give more</span>
                     </div>
                     <div className="flex items-center">
-                      <span className="text-red-500 mr-2">✗</span>
-                      <span>Your generosity gets eaten by fees</span>
+                      <span className="text-red-500 mr-2">&#10005;</span>
+                      <span>Your contribution never reaches the cause</span>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-green-600">With 1PM</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-green-600">Donating with 1PM</h3>
                   <div className="space-y-3">
                     <div className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      <span>$12 annual donation → $0.30 fee → $11.70 to charity</span>
+                      <span className="text-green-500 mr-2">&#10003;</span>
+                      <span>Thousands of &euro;1 donations become one large contribution</span>
                     </div>
                     <div className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      <span>Charities love meaningful donations</span>
+                      <span className="text-green-500 mr-2">&#10003;</span>
+                      <span>Charities receive donations they can actually use</span>
                     </div>
                     <div className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      <span>97.5% of your money reaches your cause</span>
+                      <span className="text-green-500 mr-2">&#10003;</span>
+                      <span>Your &euro;1 makes a real difference together with others</span>
                     </div>
                   </div>
                 </div>
@@ -177,7 +176,7 @@ export default function Home() {
             Ready to Make Your Donations Count?
           </h2>
           <p className="text-blue-100 mb-8 text-lg">
-            Join thousands of people turning small monthly contributions into real impact.
+            Join thousands of people giving just &euro;1/month to the causes they care about.
           </p>
           <Link href="/donate" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
             Get Started Today
